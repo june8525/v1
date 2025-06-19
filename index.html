@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEGO 2025 夏季行銷企劃</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts: Noto Sans TC for Chinese, Oswald for large numbers/headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-family: 'Noto Sans TC', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Using Oswald for large, impactful text */
+        .font-display {
+            font-family: 'Oswald', sans-serif;
+        }
+
+        /* Highlight color: Tesla Red */
+        .highlight-red {
+            color: #E31937;
+        }
+        .bg-highlight-red {
+            background-color: #E31937;
+        }
+        .border-highlight-red {
+            border-color: #E31937;
+        }
+
+        /* Bento grid box styling */
+        .bento-box {
+            background-color: #111111;
+            border: 1px solid #222;
+            border-radius: 1.5rem; /* 24px */
+            padding: 2rem; /* 32px */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Scroll-triggered animation base styles */
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        .scroll-animate.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Gradient effect for tech feel */
+        .red-glow-bottom::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to top, rgba(227, 25, 55, 0.2), transparent);
+            pointer-events: none;
+            border-radius: 1.5rem;
+        }
+        
+        /* Line art Devil Fruit SVG style */
+        .devil-fruit-svg path {
+            stroke: #E31937;
+            stroke-width: 1;
+            fill: none;
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+        }
+
+        .is-visible .devil-fruit-svg path {
+            animation: draw-fruit 2s ease-in-out forwards;
+        }
+
+        @keyframes draw-fruit {
+            to {
+                stroke-dashoffset: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+
+    <!-- MAIN CONTAINER -->
+    <div class="container mx-auto px-4 py-12 md:py-24">
+
+        <!-- HEADER -->
+        <header class="text-center mb-16 md:mb-24">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter mb-2 scroll-animate">LEGO 2025</h1>
+            <p class="text-2xl md:text-4xl text-gray-400 font-bold scroll-animate" style="transition-delay: 100ms;">夏季行銷企劃</p>
+        </header>
+
+        <!-- EXECUTIVE SUMMARY SECTION -->
+        <section class="mb-16 md:mb-24">
+            <h2 class="text-lg uppercase text-gray-500 tracking-widest mb-8 scroll-animate">Executive Summary</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Main Activities -->
+                <div class="bento-box md:col-span-2 lg:col-span-2 scroll-animate">
+                    <h3 class="text-2xl font-bold mb-4">兩大主要活動</h3>
+                    <div class="space-y-4">
+                        <div class="bg-black/50 p-4 rounded-lg">
+                            <p class="font-bold text-xl">樂高親子活動</p>
+                            <p class="text-gray-400">鞏固家庭客群，暑期實體遍地開花</p>
+                        </div>
+                        <div class="bg-black/50 p-4 rounded-lg">
+                            <p class="font-bold text-xl">樂高海賊王漫博宣傳</p>
+                            <p class="text-gray-400">引爆動漫社群，聚焦聯名話題</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Total Articles -->
+                <div class="bento-box items-center justify-center text-center scroll-animate" style="transition-delay: 100ms;">
+                     <p class="text-sm uppercase text-gray-500">總合作文章數</p>
+                    <p class="font-display text-8xl lg:text-9xl font-bold my-2">23</p>
+                    <p class="text-lg font-bold">PAGES</p>
+                </div>
+                
+                <!-- KPIs -->
+                <div class="bento-box scroll-animate" style="transition-delay: 200ms;">
+                    <h3 class="text-2xl font-bold mb-4">KPIs</h3>
+                    <div class="space-y-4 text-lg">
+                        <div class="flex items-center space-x-3">
+                            <i class="fab fa-threads w-6 text-center highlight-red"></i>
+                            <p>Threads: <span class="font-bold">6</span> 篇 / <span class="font-bold">100+</span> <i class="fa-solid fa-heart"></i></p>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                           <i class="fa-brands fa-rocketchat w-6 text-center highlight-red"></i>
+                            <p>PTT: <span class="font-bold">2</span> 篇 / <span class="font-bold">10+</span> <i class="fa-solid fa-arrow-up"></i></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Platforms -->
+                <div class="bento-box md:col-span-2 lg:col-span-4 scroll-animate" style="transition-delay: 300ms;">
+                    <h3 class="text-2xl font-bold mb-4">合作平台規格</h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">Dcard</p><p class="text-sm text-gray-400">5 篇</p></div>
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">Threads</p><p class="text-sm text-gray-400">6 篇</p></div>
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">PTT</p><p class="text-sm text-gray-400">2 篇</p></div>
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">Mobile01</p><p class="text-sm text-gray-400">1 篇</p></div>
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">巴哈姆特</p><p class="text-sm text-gray-400">1 篇</p></div>
+                        <div class="bg-gray-800 p-3 rounded-xl"><p class="font-bold text-lg">其他社團</p><p class="text-sm text-gray-400">8 篇</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMPAIGN 01: PARENT-CHILD SECTION -->
+        <section class="mb-16 md:mb-24">
+            <div class="scroll-animate mb-8">
+                <p class="text-lg uppercase text-gray-500 tracking-widest">Campaign 01</p>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter">樂高親子活動</h2>
+                <p class="text-2xl font-bold highlight-red mt-1">#TAKE A BRICK, BUILDING SUMMER BONDS</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <!-- Locations -->
+                <div class="bento-box scroll-animate relative overflow-hidden red-glow-bottom">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center"><i class="fa-solid fa-map-location-dot mr-3 highlight-red"></i>找樂點 / 找樂 Event</h3>
+                    <p class="text-gray-400 mb-4">活動期間: 2025/7/1 – 8/31</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <h4 class="font-bold text-lg border-b border-gray-700 pb-1 mb-2">戶外樂點</h4>
+                            <ul class="space-y-3 text-gray-300">
+                                <li><div class="flex flex-col"><p><i class="fa-solid fa-leaf mr-2"></i>花博公園</p><p class="text-sm text-gray-400 pl-6">7/8–7/20</p></div></li>
+                                <li><div class="flex flex-col"><p><i class="fa-solid fa-snowflake mr-2"></i>冰上樂園</p><p class="text-sm text-gray-400 pl-6">7/25–8/3</p></div></li>
+                                <li><div class="flex flex-col"><p><i class="fa-solid fa-train mr-2"></i>駁二哈瑪星</p><p class="text-sm text-gray-400 pl-6">8/8–8/17</p></div></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg border-b border-gray-700 pb-1 mb-2">百貨活動</h4>
+                            <ul class="space-y-3 text-gray-300">
+                                <li><div class="flex flex-col"><p><i class="fa-solid fa-store mr-2"></i>統一時代百貨</p><p class="text-sm text-gray-400 pl-6">7/1–7/17</p></div></li>
+                                <li><div class="flex flex-col"><p><i class="fa-solid fa-store mr-2"></i>台南西門新天地</p><p class="text-sm text-gray-400 pl-6">8/1–8/17</p></div></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AR Flow (Swapped) -->
+                <div class="bento-box scroll-animate" style="transition-delay: 100ms;">
+                    <h3 class="text-2xl font-bold mb-4"><i class="fa-solid fa-camera-retro mr-3 highlight-red"></i>AR 互動流程</h3>
+                    <div class="flex flex-col h-full justify-around gap-2 text-center text-sm">
+                        <div class="flex items-center"><i class="fa-solid fa-qrcode text-2xl w-8 text-center mr-2"></i><span>掃描 QR Code 進入體驗</span></div>
+                        <div class="flex items-center"><i class="fa-brands fa-line text-2xl w-8 text-center mr-2"></i><span>加入 Line OA 查看介紹</span></div>
+                        <div class="flex items-center"><i class="fa-solid fa-mobile-screen-button text-2xl w-8 text-center mr-2"></i><span>啟動尋寶地圖與任務</span></div>
+                        <div class="flex items-center"><i class="fa-solid fa-video text-2xl w-8 text-center mr-2"></i><span>AR 互動錄影並分享</span></div>
+                        <div class="flex items-center"><i class="fa-solid fa-gift text-2xl w-8 text-center mr-2"></i><span>完成後觸發抽獎贈品</span></div>
+                    </div>
+                </div>
+                
+                <!-- Platform Planning (Campaign 01) (Swapped and Full-width) -->
+                <div class="bento-box lg:col-span-2 scroll-animate" style="transition-delay: 200ms;">
+                    <h3 class="text-2xl font-bold mb-4">平台規劃 <span class="text-base text-gray-500 font-normal ml-2">(親子)</span></h3>
+                    <div class="space-y-2">
+                         <!-- Dcard -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-graduation-cap text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">Dcard</p>
+                                    <p class="text-sm text-gray-400">同位寫手，北部2篇、南部3篇，具連貫性。</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">5</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- Threads -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fab fa-threads text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">Threads</p>
+                                    <p class="text-sm text-gray-400">即時分享現場活動亮點。</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">3</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- PTT -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fa-brands fa-rocketchat text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">PTT lifeismoney</p>
+                                    <p class="text-sm text-gray-400">強調活動優惠與CP值。</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">1</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- Mobile01 -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-mobile-screen text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">Mobile01</p>
+                                    <p class="text-sm text-gray-400">家庭/親子視角深度體驗文。</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">1</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- Other Forums -->
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-users text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">其他論壇（PM建議）</p>
+                                    <p class="text-sm text-gray-400">擴大活動曝光。</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">3</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CAMPAIGN 02: ONE PIECE SECTION -->
+        <section class="mb-16 md:mb-24">
+            <div class="scroll-animate mb-8">
+                <p class="text-lg uppercase text-gray-500 tracking-widest">Campaign 02</p>
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter">樂高x海賊王_漫博宣傳</h2>
+                <p class="text-2xl font-bold highlight-red mt-1">#BUILD THE GRAND ADVENTURE</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <!-- Devil Fruit Highlight -->
+                <div class="bento-box md:col-span-3 lg:col-span-2 scroll-animate relative overflow-hidden flex flex-col items-center justify-center text-center">
+                    <h3 class="text-xl md:text-2xl font-bold">亮點展示</h3>
+                    <p class="text-2xl md:text-3xl lg:text-4xl font-black my-4 highlight-red">人人果實</p>
+                    <p class="text-lg font-bold text-gray-300">幻獸種 尼卡型態</p>
+                    <div class="w-48 h-48 my-4">
+                        <svg class="devil-fruit-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M50,10 C70,10 90,30 90,50 C90,70 70,90 50,90 C30,90 10,70 10,50 C10,30 30,10 50,10 Z M50,10 C55,10 55,2 50,2 C45,2 45,10 50,10 Z M30,30 C20,40 25,60 40,70 C55,80 70,65 70,50 C70,35 60,25 50,30 C40,35 35,25 30,30 Z M40,40 C35,45 35,55 45,60 C55,65 65,55 60,45 C55,35 45,35 40,40 Z"/>
+                        </svg>
+                    </div>
+                    <p class="font-bold">惡魔果實 實體展示</p>
+                </div>
+
+                <!-- Activation Plan -->
+                <div class="bento-box md:col-span-2 lg:col-span-3 scroll-animate" style="transition-delay: 100ms;">
+                    <h3 class="text-2xl font-bold mb-4">活化計畫</h3>
+                    <div class="space-y-6">
+                        <!-- June -->
+                        <div>
+                            <p class="font-display text-4xl font-bold highlight-red mb-1">JUNE</p>
+                            <h4 class="text-xl font-bold">預熱期 Pre-hype</h4>
+                            <p class="text-gray-400">提升新品認知，鎖定核心粉絲</p>
+                        </div>
+                        <!-- July -->
+                        <div>
+                            <p class="font-display text-4xl font-bold highlight-red mb-1">JULY</p>
+                            <h4 class="text-xl font-bold">話題炒熱期 Stir Talkability</h4>
+                            <p class="text-gray-400">展場尋寶遊戲，激發互動需求</p>
+                        </div>
+                        <!-- August -->
+                        <div>
+                            <p class="font-display text-4xl font-bold highlight-red mb-1">AUGUST</p>
+                            <h4 class="text-xl font-bold">擴大轉換期 Expand & Convert</h4>
+                            <p class="text-gray-400">強化購買理由，促成最終購買</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Platform Planning (Campaign 02) -->
+                <div class="bento-box md:col-span-5 scroll-animate" style="transition-delay: 200ms;">
+                    <h3 class="text-2xl font-bold mb-4">平台規劃 <span class="text-base text-gray-500 font-normal ml-2">(海賊王)</span></h3>
+                    <div class="space-y-2">
+                        <!-- Threads -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fab fa-threads text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">Threads</p>
+                                    <p class="text-sm text-gray-400">即時展場趣事</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">3</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- PTT -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fa-brands fa-rocketchat text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">PTT 海賊王版</p>
+                                    <p class="text-sm text-gray-400">資深粉絲解析</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">1</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- Bahamut -->
+                        <div class="flex items-center justify-between py-3 border-b border-gray-800">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-gamepad text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">巴哈姆特</p>
+                                    <p class="text-sm text-gray-400">深度漫畫剖析</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">1</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                        <!-- Other Communities -->
+                        <div class="flex items-center justify-between py-3">
+                            <div class="flex items-center">
+                                <i class="fa-solid fa-users text-2xl w-8 text-center mr-4 highlight-red"></i>
+                                <div>
+                                    <p class="font-bold text-lg">其他動漫社團（PM建議）</p>
+                                    <p class="text-sm text-gray-400">擴大觸及</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span class="font-display text-4xl font-bold highlight-red">5</span>
+                                <span class="text-gray-500 ml-1">篇</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEXT STEPS -->
+        <section>
+            <div class="scroll-animate mb-8">
+                <h2 class="text-4xl md:text-6xl font-black tracking-tighter">Next Steps</h2>
+            </div>
+            <div class="bento-box scroll-animate">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-list-check text-4xl mr-6 highlight-red"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold">待辦行動事項</h3>
+                        <p class="text-xl text-gray-300">確認最終平台與寫手名單，啟動合作流程。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JavaScript for scroll animations -->
+    <script>
+        // Framer Motion is not directly used here to keep it lightweight with vanilla JS.
+        // This script uses the Intersection Observer API to achieve a similar "on scroll" animation effect.
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const animatedElements = document.querySelectorAll('.scroll-animate');
+
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('is-visible');
+                            observer.unobserve(entry.target);
+                        }
+                    });
+                }, {
+                    threshold: 0.1 // Trigger when 10% of the element is visible
+                });
+
+                animatedElements.forEach(el => {
+                    observer.observe(el);
+                });
+            } else {
+                // Fallback for older browsers
+                animatedElements.forEach(el => {
+                    el.classList.add('is-visible');
+                });
+            }
+        });
+    </script>
+
+</body>
+</html>
